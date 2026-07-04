@@ -1,3 +1,9 @@
+CREATE TABLE "todos" (
+	"id" serial PRIMARY KEY NOT NULL,
+	"title" text NOT NULL,
+	"created_at" timestamp DEFAULT now()
+);
+--> statement-breakpoint
 CREATE TABLE "account" (
 	"id" text PRIMARY KEY NOT NULL,
 	"account_id" text NOT NULL,
